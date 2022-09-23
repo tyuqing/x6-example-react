@@ -8,9 +8,17 @@ export async function getInitialState(): Promise<{ name: string }> {
 
 export const layout = () => {
   return {
-    logo: 'https://img.alicdn.com/tfs/TB1YHEpwUT1gK0jSZFhXXaAtVXa-28-27.svg',
+    headerRender: false,
+    footerRender: false,
     menu: {
       locale: false,
+    },
+    menuRender: false,
+    menuHeaderRender: false,
+    contentStyle: {
+      width: '100vw',
+      height: '100vh',
+      margin: 'unset',
     },
   };
 };
