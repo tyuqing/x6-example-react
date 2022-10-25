@@ -1,5 +1,11 @@
+import TopologyEdit from './components/Graph';
+
 function Flow() {
-  return <div>图编辑</div>;
+  return (
+    <div>
+      <TopologyEdit></TopologyEdit>
+    </div>
+  );
 }
 
 export default Flow;

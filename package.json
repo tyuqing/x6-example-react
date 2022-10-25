@@ -12,8 +12,14 @@
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
     "@ant-design/pro-components": "^2.0.1",
+    "@antv/layout": "^0.2.5",
+    "@antv/x6": "^1.33.0",
+    "@antv/x6-react-components": "^1.1.15",
+    "@antv/x6-react-shape": "^1.6.1",
     "@umijs/max": "^4.0.22",
-    "antd": "^4.20.7"
+    "ahooks": "^3.4.1",
+    "antd": "^4.20.7",
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",

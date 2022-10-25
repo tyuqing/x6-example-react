@@ -1,0 +1,135 @@
+.topologyEdit {
+  border: 1px solid #d9d9d9;
+  height: 100vh;
+}
+// 左侧节点菜单
+.stencilCol {
+  border-right: 1px solid #d9d9d9;
+}
+
+.stencilContainer {
+  height: 100%;
+
+  :global {
+    .x6-widget-stencil-title {
+      display: none;
+    }
+
+    .x6-widget-stencil.collapsable > .x6-widget-stencil-content {
+      top: 0;
+    }
+
+    .x6-widget-stencil {
+      background-color: #f7f8fa;
+    }
+
+    .x6-widget-stencil-group > .x6-widget-stencil-group-title {
+      background: unset;
+    }
+
+    .x6-widget-stencil-title,
+    .x6-widget-stencil-group > .x6-widget-stencil-group-title {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 44px;
+      height: 44px;
+      color: #262626;
+    }
+
+    .x6-widget-stencil-group.collapsed {
+      max-height: 44px;
+    }
+
+    .x6-widget-stencil-group-title:hover {
+      background: #f5f5f5;
+    }
+
+    .x6-widget-stencil.collapsable > .x6-widget-stencil-title::before,
+    .x6-widget-stencil-group.collapsable
+      > .x6-widget-stencil-group-title::before {
+      top: 14px;
+    }
+  }
+}
+// 右侧
+.right {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  min-width: 0;
+  height: 100%;
+}
+// 顶部工具栏
+.graphOperation {
+  flex: 0 0 39px;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 0 3px;
+}
+
+.operationButton:hover {
+  color: #262626;
+  background-color: #e0e0e0;
+}
+// 绘图区域
+.graphContainer {
+  flex: 1;
+  width: 100% !important; // 加important是因为需出发autoResize
+  :global {
+    .x6-edge-selected path:nth-child(2) {
+      stroke: #1890ff;
+      stroke-width: 1.5px !important;
+    }
+  }
+}
+
+// 右侧画图尺寸调整工具
+.canvasScaleToolbar {
+  position: absolute;
+  top: 50px;
+  right: 10px;
+}
+
+// 以下无用
+.x6-widget-stencil {
+  background-color: #fff;
+}
+
+.x6-widget-stencil-title {
+  background-color: #fff;
+}
+
+.x6-widget-stencil-group-title {
+  background-color: #fff !important;
+}
+
+.x6-widget-transform {
+  margin: -1px 0 0 -1px;
+  padding: 0;
+  border: 1px solid #239edd;
+}
+
+.x6-widget-transform > div {
+  border: 1px solid #239edd;
+}
+
+.x6-widget-transform > div:hover {
+  background-color: #3dafe4;
+}
+
+.x6-widget-transform-active-handle {
+  background-color: #3dafe4;
+}
+
+.x6-widget-transform-resize {
+  border-radius: 0;
+}
+
+.x6-widget-selection-inner {
+  border: 1px solid #239edd;
+}
+
+.x6-widget-selection-box {
+  opacity: 0;
+}
